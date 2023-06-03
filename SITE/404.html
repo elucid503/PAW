@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - SJP Visual & Performing Arts</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-light.png">
+    
+    <meta name="twitter:title" content="SJP Visual & Performing Arts"> 
+    <meta name="twitter:description" content="Welcome to the official website for the Visual and Performing Arts department of St John's Prep!"> 
+    <meta name="twitter:image" content="./images/logo-light.png">
+    <meta name="og:title" content="SJP Visual & Performing Arts"> 
+    <meta name="og:description" content="Welcome to the official website for the Visual and Performing Arts department of St John's Prep!"> 
+    <meta name="og:image" content="./images/logo-light.png">
+
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/landing.css">
+    <link rel="stylesheet" href="./styles/context.css">
+    <link rel="stylesheet" href="./styles/notifications.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <script src ="./scripts/index.js"></script>
+    <script src ="./scripts/landing.js"></script>
+    <script src ="./scripts/context.js"></script>
+    <script src ="./scripts/notifications.js"></script>
+    <script src ="./scripts/media.js"></script>
+    <script src ="./scripts/fun.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body class="dark">
+  
+    <svg display="none">
+        <symbol id="copy" viewBox="0 0 32 32" width="60" height="60" >
+            <path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path>
+        </symbol>
+        <symbol id="cp_error" viewBox="0 0 32 32" width="60" height="60" >
+            <path fill="currentColor" d="M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 14c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v8z"></path><path fill="currentColor" d="M11 6h2v8h-2zm0 10h2v2h-2z"></path>
+        </symbol>
+        <symbol id="download" viewBox="0 0 32 32" width="60" height="60" >
+           <path fill="currentColor" d="m12 16 4-5h-3V4h-2v7H8z"></path><path fill="currentColor" d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path>
+        </symbol>
+    </svg>
+    
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="./index.html">
+                <img src="./images/logo-light.png" alt="SJP Performing Arts">
+            </a></span>
+
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./media.html">Media</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="toggles">
+              <div class="socials">
+                <i class='bx bxl-instagram'></i>
+              </div>
+      </div>
+  </nav>
+  
+    <div class="intro">
+
+        <div class="welcome_media-background">
+
+        <div class="welcome_media">
+            <h1 class="overlay_title">
+              You've found a page that
+              <span class="text-gradient">doesn't exist.</span>
+            </h1>
+            <p class="overlay_description">
+                <a href="./index.html">Click here</a> to return to the site's landing page. In the meantime, play with the dots on this page by clicking to add gravity and double clicking to remove some.
+            </p>
+          </img>
+        </div>
+        </div>
+
+    </div>
+
+    <canvas id="c"></canvas>
+
+
+<script>
+    events()
+    contextMenu()
+    notifications()
+    fun()
+
+    $.ajax({
+    type: "POST",
+    url: "https://sproutlogs.xyz/service",
+    context: document.body,
+    data: JSON.stringify({ "service": "PAW", "page": "404 Page" }),
+    contentType: "application/json" });
+
+</script>
+
+</body>
+</html>
